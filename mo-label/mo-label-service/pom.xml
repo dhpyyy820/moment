@@ -11,6 +11,7 @@
 
     <groupId>com.moment.service</groupId>
     <artifactId>mo-label-service</artifactId>
+
     <dependencies>
         <!--Eureka客户端-->
         <dependency>
@@ -47,13 +48,13 @@
             <version>${mysql.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.moment.service</groupId>
             <artifactId>mo-label-interface</artifactId>
             <version>${moment.latest.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
